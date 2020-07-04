@@ -161,6 +161,7 @@ body{
     color: #4a4e57;
     font-weight: 500;
     margin-bottom: 40px;
+    letter-spacing: 8px;
   }
   &__subtitle{
     margin-top: 100px;
@@ -170,5 +171,55 @@ body{
   &__descr{
     color: #fff;
   }
+}
 
+.tech{
+  padding: 50px 0;
+  &__title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    color: #4a4e57;
+    letter-spacing: 8px;
+  }
+  &__card{
+    margin-bottom: 40px;
+  }
+  &-stack {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &__img {
+      width: 50px;
+    }
+
+    &__title {
+      text-align: center;
+      /* margin: auto; */
+      margin-left: 20%;
+      font-size: 22px;
+      font-weight: 500;
+    }
+  }
+}
+.tech__card p{
+  height: 70px;
+  overflow: hidden;
+  color: #717885;
+
+}
+.showContent p{
+  height: auto;
+
+}
+.readmore-btn{
+
+  cursor: pointer;
+  text-decoration: underline
+}
+.showContent .readmore-btn{
+  color: #007bff;
+  transition: 1s;
 }
