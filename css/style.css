@@ -4,6 +4,20 @@ body {
   box-sizing: border-box;
 }
 
+* a:hover {
+  text-decoration: none;
+}
+
+.hr__one {
+  width: 200px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+.hr__two {
+  width: 100px;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
 .container {
   max-width: 1400px;
 }
@@ -91,14 +105,14 @@ body {
   width: 320px;
   padding: 17px 16px 15px;
   border-radius: 27.5px;
-  background-color: #56B9EA;
+  background-color: #2A98A3;
   border: none;
   font-size: 18px;
   font-weight: 500;
   color: #fff;
 }
 .button:hover {
-  background-color: #2d9eea;
+  background-color: #208191;
 }
 
 .services {
@@ -159,7 +173,6 @@ body {
   text-align: center;
   color: #4a4e57;
   font-weight: 500;
-  margin-bottom: 40px;
   letter-spacing: 8px;
 }
 .customers__subtitle {
@@ -172,18 +185,18 @@ body {
 }
 
 .tech {
-  padding: 50px 0;
+  padding: 50px 100px;
 }
 .tech__title {
   text-align: center;
   font-size: 30px;
   font-weight: 500;
-  margin-bottom: 60px;
   color: #4a4e57;
   letter-spacing: 8px;
 }
 .tech__card {
   margin-bottom: 40px;
+  padding: 0 30px;
 }
 .tech-stack {
   display: flex;
@@ -219,6 +232,96 @@ body {
 .showContent .readmore-btn {
   color: #007bff;
   transition: 1s;
+}
+
+.contacts {
+  background: url(../img/scalet-bg.jpg) center center/cover no-repeat;
+}
+.contacts__title {
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.contacts__wrapper {
+  padding: 60px;
+  display: flex;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.location a:hover {
+  color: #fff;
+}
+.location__title {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.contacts__main {
+  width: 50%;
+  padding-top: 78px;
+  padding-left: 100px;
+}
+
+.form__wrapper {
+  border-radius: 6px;
+  background-color: #fff;
+  max-width: 450px;
+}
+
+.form {
+  width: 50%;
+}
+.form__title {
+  border-bottom: 1px solid #2A98A3;
+  padding: 15px 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a4e57;
+}
+
+.feed-form {
+  padding: 0 20px;
+}
+.feed-form__input {
+  margin: 36px 0;
+  padding: 10px 15px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: solid 1px #2A98A3;
+  font-size: 14px;
+  resize: none;
+  background-color: transparent;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.button-submit {
+  padding: 10px;
+  margin: 0 0 20px 0;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid #2A98A3;
+  background-color: #2A98A3;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.button-submit:hover {
+  background-color: #208191;
 }
 
 /*# sourceMappingURL=style.css.map */
