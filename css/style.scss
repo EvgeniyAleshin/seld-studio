@@ -9,6 +9,9 @@ body{
 *a:hover{
   text-decoration: none;
 }
+*ul,li{
+  list-style-type: none;
+}
 .hr {
 
   &__one{
@@ -26,7 +29,7 @@ body{
 
 }
 .row{
-
+margin: 0;
 }
 .header{
   z-index: 1;
@@ -77,6 +80,7 @@ body{
     min-width: 100%;
     height: 100%;
     object-fit: cover;
+
   }
 }
 .main-content{
@@ -96,6 +100,7 @@ body{
 }
 .home{
   position: relative;
+
 }
 .button{
   margin-top: 50px;
@@ -155,14 +160,14 @@ body{
 
   &__one{
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/customers_1.jpg');
+    background-image: linear-gradient(rgba(9,60,77,.6), rgba(9,60,77,.9)), url('../img/customers_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
   }
   &__two{
     text-align: center;
-    background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url('../img/customers_2.jpg');
+    background-image: linear-gradient(rgba(9,60,77,.6), rgba(9,60,77,.9)), url('../img/customers_2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -193,10 +198,10 @@ body{
   padding: 50px 100px;
 
   &__title{
+    font-size: 37px;
     text-align: center;
-    font-size: 30px;
-    font-weight: 500;
     color: #4a4e57;
+    font-weight: 500;
     letter-spacing: 8px;
   }
   &__card{
@@ -287,9 +292,11 @@ body{
   &__title{
     border-bottom: 1px solid $main-color;
     padding: 15px 20px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #4a4e57
+    font-size: 20px;
+    color: #4a4e57;
+    font-weight: 500;
+    letter-spacing: 5px;
+
   }
 
 }
@@ -327,5 +334,65 @@ button:focus {
   color: #fff;
   &:hover{
     background-color: $hover-color;
+  }
+}
+
+
+.footer-block{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px 0 100px;
+}
+.list{
+  & a {
+    font-size: 14px;
+    border-bottom: solid 1px #2A98A3;
+    color: #4a4e57;
+  }
+  & a:hover{
+    border-bottom: none;
+  }
+  &-title{
+    font-size: 14px;
+    color: #4a4e57;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+
+  }
+  &-item {
+    margin-bottom: 8px;
+  }
+}
+.footer-title{
+  text-align: center;
+  font-size: 14px;
+  margin: 15px 0 ;
+}
+hr{
+  border-top: solid 1px #2A98A3;
+}
+.footer-info{
+  &__image img{
+    width: 100px;
+  }
+  &__title{
+    margin-top: 30px;
+    max-width: 300px;
+    font-size: 14px;
+    color: #4a4e57;
+  }
+}
+
+@media (min-aspect-ratio: 16/9){
+  .video-block{
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .video-block{
+    width: auto;
+    height: 100%;
   }
 }
